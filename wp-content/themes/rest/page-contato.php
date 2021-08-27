@@ -8,7 +8,7 @@
 			<h2 class="subtitulo"><?php the_title(); ?></h2>
 
 			<div class="grid-16">
-				<a href="https://www.google.com.br/maps" target="_blank"><img src="<?php the_field('foto_maps_rest'); ?>" alt="<?php the_field('descricao_maps_rest'); ?>"></a>
+				<a href="<?php the_field('link_mapa'); ?>" target="_blank"><img src="<?php the_field('foto_maps_rest'); ?>" alt="Mapa da localização do Rest"></a>
 			</div>
 
 			<?php if(have_rows('informacao_contato')): while(have_rows('informacao_contato')) : the_row(); ?>
